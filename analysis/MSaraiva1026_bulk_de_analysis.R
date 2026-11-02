@@ -167,7 +167,7 @@ if (run_volcano) {
 }
 
 
-## 5 - PCA (rlog, blind = TRUE) ----
+## 5 - PCA ----
 
 if (run_pca) {
   rlog_pca <- SummarizedExperiment::assay(DESeq2::rlog(dds, blind = TRUE))
@@ -265,7 +265,7 @@ if (run_heatmaps) {
 }
 
 
-## Session info for reproducibility
+## Session info
 writeLines(capture.output(sessionInfo()), file.path(output_dir, "sessionInfo.txt"))
 
 message("Analysis complete. Results in: ", normalizePath(output_dir))
