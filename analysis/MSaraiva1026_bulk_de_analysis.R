@@ -48,8 +48,8 @@ experiment <- "MSaraiva1026"
 
 ## Metadata and raw gene counts
 input_dir <- "data"
-metadata_file <- "Metadata_NCBI.xlsx"
-counts_file <- "Raw_gene_counts.tsv"
+metadata_file <- "Metadata.xlsx"
+counts_file <- "Gene_counts.tsv"
 output_dir <- "results"
 
 ## 2.1 - Samples and groups
